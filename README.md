@@ -44,7 +44,7 @@ TIMD4 ... 0.340465829	1 0	2.07E-35	9.88E-33 0.070962262
 ```
 
 #### CNV
-
+Copy Number event can also be provided as input to Concerti via a MAF file as described before via their CCF distribution.
 
 ### Output
 
