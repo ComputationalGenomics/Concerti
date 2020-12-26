@@ -58,4 +58,4 @@ For assistance with running Concerti, interpreting the results, or other related
 
 ## Licence
 
-See LICENSE for license information.
+See [LICENSE](https://github.com/ComputationalGenomics/Concerti/blob/main/licence) for license information.
