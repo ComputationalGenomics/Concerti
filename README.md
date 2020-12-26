@@ -36,7 +36,14 @@ Sample-T-02,/path/Patient1/sample2_MAF.txt,2295,100
 The file_sample column indicate the path where the MAF file for the sample is stored. The time_point_value indicates when the time point was collected, while the ALC (absolute lymphocyte count) is optional and it is used as tumor size proxy if available for display purpose only.
 
 #### MAF 
+With respect to the standard [MAF](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/) format additional data can be provided, such as the CCF distribution discretized into 100 bins (easily obtained in MAF format via the absolute tool) as well as the confidence interval. For instance:
 
+```
+Hugo_Symbol	... ccf_CI95_low ccf_CI95_high 0 0.01 0.012..1
+TIMD4 ... 0.340465829	1 0	2.07E-35	9.88E-33 0.070962262
+```
+
+#### CNV
 
 
 ### Output
