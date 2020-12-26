@@ -26,7 +26,7 @@ where the required options -s designate the samples input file while -o the outp
 ### Input
 
 #### Sample File
-The sample input file is a comma separated file where each row indicate informations on the bulk DNA sample, row 1 is dedicated for the header. An example of the file is:
+The sample input file is a comma separated file where each row indicate informations on the bulk DNA sample, the first row is dedicated for the header. An example of the file is:
 
 ```
 sample_name,file_sample,time_point_value,ALC
