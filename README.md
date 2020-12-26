@@ -56,6 +56,6 @@ Copy Number event can also be provided as input to Concerti via a MAF file as de
 
 For assistance with running Concerti, interpreting the results, or other related questions, please feel free to contact: Laxmi Parida <parida@us.ibm.com> or Filippo Utro <futro@us.ibm.com>
 
-## Licence
+## License
 
-See [LICENSE](https://github.com/ComputationalGenomics/Concerti/blob/main/licence) for license information.
+See [LICENSE](https://github.com/ComputationalGenomics/Concerti/blob/main/license) for license information.
