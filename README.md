@@ -11,6 +11,22 @@ Filippo Utro, Chaya Levovitz, Kahn Rhrissorrakrai and Laxmi Parida: A Common Met
 
 ## Usage
 
+### Requirements
+
+The following software is required for Concerti:
+
+- Python 3
+- Pandas (>1)
+- numpy (>1.18.2)
+- joblib (>0.14)
+- seaborn (>0.10)
+- matplotli (>3.2.1)
+- pyparsign (>2.4)
+- scipy (>1.4.1)
+- networkx (>2.4)
+- pyinterval (>1.2)
+
+
 ### Running
 The command to run Concerti is simply
 
@@ -43,11 +59,21 @@ Hugo_Symbol	... ccf_CI95_low ccf_CI95_high 0 0.01 0.012 ... 1
 TIMD4 ... 0.340465829	1 0	2.07E-35	9.88E-33 ... 0.070962262
 ```
 
+Concerti relies on the assumption is that a set of alterations is present in the same set of clones, then the pair will be present in the same set of samples. Sometime due to sequencing error, or other factor, an alteration may not been detected in a sample, and so the corresponding MAF file must be corrected. Since there are several pre-processing filtering to enforce this assumptiom, and they are out of scope of this tool, the user must adjust the MAF prior running the tool.
+
 #### CNV
-Copy Number event can also be provided as input to Concerti via a MAF file as described before via their CCF distribution.
+Copy Number event can also be provided as input to Concerti via a MAF file as described above via their CCF distribution.
+
+#### Alteration filtering
+If the user wants to filter a set of alterations (e.g. due to possible artifact) withouth changing the original MAF they can provide as input via a tab separeted file: chromosome, position, reference, alteration. For instance:
+
+```
+1	155161125	T	G
+5	179278379	GGAATGAGATTCTATGGACTTGGA	-
+7	27149924	A	G
+```
 
 ### Output
-
 
 
 
@@ -55,7 +81,6 @@ Copy Number event can also be provided as input to Concerti via a MAF file as de
 ## Contact
 
 For assistance with running Concerti, interpreting the results, or other related questions, please feel free to contact: Laxmi Parida <parida@us.ibm.com> or Filippo Utro <futro@us.ibm.com>
-
 ## License
 
 See [LICENSE](https://github.com/ComputationalGenomics/Concerti/blob/main/license) for license information.
