@@ -58,7 +58,6 @@ optional arguments:
   --graph, -g           Indicates if store plots in supplemental folder.
   --no_longitudinal, -nl
                         Indicates the sample were collected from a longitudinal experiment.
-  --broad_clustering BROAD_CLUSTERING, -bc BROAD_CLUSTERING
   --cnv CNV, -cnv CNV
   --black_list BLACK_LIST, -bl BLACK_LIST
   --VAF, -vaf           Indicates if the input data are in VAF format.
