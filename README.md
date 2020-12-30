@@ -31,13 +31,40 @@ The following software is required for Concerti:
 The command to run Concerti is simply
 
 ```
-python Concerti.py -s <sample_input_file> -o <out_dir>
+./Concerti -s <sample_input_file> -o <out_dir>
 ```
 where the required options -s designate the samples input file while -o the output directory.
 
 
 ### Command line options
+```usage: Concerti [-h] --sample_info SAMPLE_INFO [--patient_name PATIENT_NAME] --store_out_folder STORE_OUT_FOLDER [--store_tmp] [--thd_clustering THD_CLUSTERING]
+                [--small_clone_thd SMALL_CLONE_THD] [--thd_zero THD_ZERO] [--criterion CRITERION] [--graph] [--no_longitudinal] 
+                [--cnv CNV] [--black_list BLACK_LIST] [--VAF] [--VAFDistance {euclidean,hamming,chebyshev,correlation}]
 
+optional arguments:
+  -h, --help            show this help message and exit
+  --sample_info SAMPLE_INFO, -s SAMPLE_INFO
+  --patient_name PATIENT_NAME, -p PATIENT_NAME
+                        Indicates the patient name, if provided it will be used in the output filenames.
+  --store_out_folder STORE_OUT_FOLDER, -o STORE_OUT_FOLDER
+                        Name of the output folder.
+  --store_tmp, -st      Indicates if temporary data should be stored
+  --thd_clustering THD_CLUSTERING
+                        Threshold to where to cut the dendrogram in the clustering step.
+  --small_clone_thd SMALL_CLONE_THD
+                        Clones with ccf value in all time points below the provided value will be ignore in the tree construction.
+  --thd_zero THD_ZERO   Threshold for which a mutation is considered absent
+  --criterion CRITERION
+  --graph, -g           Indicates if store plots in supplemental folder.
+  --no_longitudinal, -nl
+                        Indicates the sample were collected from a longitudinal experiment.
+  --broad_clustering BROAD_CLUSTERING, -bc BROAD_CLUSTERING
+  --cnv CNV, -cnv CNV
+  --black_list BLACK_LIST, -bl BLACK_LIST
+  --VAF, -vaf           Indicates if the input data are in VAF format.
+  --VAFDistance {euclidean,hamming,chebyshev,correlation}, -vd {euclidean,hamming,chebyshev,correlation}
+                        Indicates which distance to be use in the case of VAF data.
+```
 
 ### Input
 
