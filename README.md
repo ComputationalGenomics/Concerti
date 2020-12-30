@@ -90,7 +90,7 @@ TIMD4 ... 0.340465829	1 0	2.07E-35	9.88E-33 ... 0.070962262
 Concerti relies on the assumption is that a set of alterations is present in the same set of clones, then the pair will be present in the same set of samples. Sometime due to sequencing error, or other factor, an alteration may not been detected in a sample but for instance in the multi-time case it was detected in the previous and in the next sample. Hence the corresponding MAF file must be corrected. Since there are several pre-processing filtering to enforce this assumptiom, and they are out of scope of this tool, the user must adjust the MAF prior running the tool.
 
 #### CNV
-Copy Number event can also be provided as input to Concerti via a MAF file as described above via their CCF distribution.
+Copy Number event can also be provided as input to Concerti via a single MAF file as described above, where the column *Sample_ID* indicate which sample the event belong to. CNV event are processed only via their CCF distribution.
 
 #### Alteration filtering
 If the user wants to filter a set of alterations (e.g. due to possible artifact) withouth changing the original MAF they can provide as input via a tab separeted file: chromosome, position, reference, alteration. For instance:
