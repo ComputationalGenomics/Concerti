@@ -35,6 +35,7 @@ The command to run Concerti is simply
 ```
 where the required options -s designate the samples input file while -o the output directory.
 
+Concerti was tested on Ubuntu 18.04.5 LTS
 
 ### Command line options
 ```
