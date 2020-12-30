@@ -37,7 +37,8 @@ where the required options -s designate the samples input file while -o the outp
 
 
 ### Command line options
-```usage: Concerti [-h] --sample_info SAMPLE_INFO [--patient_name PATIENT_NAME] --store_out_folder STORE_OUT_FOLDER [--store_tmp] [--thd_clustering THD_CLUSTERING]
+```
+usage: Concerti [-h] --sample_info SAMPLE_INFO [--patient_name PATIENT_NAME] --store_out_folder STORE_OUT_FOLDER [--store_tmp] [--thd_clustering THD_CLUSTERING]
                 [--small_clone_thd SMALL_CLONE_THD] [--thd_zero THD_ZERO] [--criterion CRITERION] [--graph] [--no_longitudinal] 
                 [--cnv CNV] [--black_list BLACK_LIST] [--VAF] [--VAFDistance {euclidean,hamming,chebyshev,correlation}]
 
