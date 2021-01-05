@@ -103,7 +103,17 @@ If the user wants to filter a set of alterations (e.g. due to possible artifact)
 
 ### Output
 
+The output folder indicated by the `--store_out_folder` (`-o`) option will be created if not existed. The folder will contains a subfolder named *supplement* where extra data will be store. For instance if the `-st` and/or the  `-g` options were indicated these files will be stored inside the supplement one. For each sample, the supplement folder will also contain the possible clonal configuration in a `_tree.csv` (a file per sample), with the following format:
 
+```
+tree,pr
+(-1,2)(2,4)(2,3)(4,1.0),0.16271127210267092
+...
+```
+
+The firt column contains the tree information as (parent, child) relationship, where -1 indicate no parent. Whie the second column indicate the probability of the tree. 
+
+A similar file with all compatible trees across sample is then stored in the main output folder as well as `*clonal_structure.csv`: which contains for each row an alteration, the mean CCF (or VAF) for each sample and to which clone/cluster it has been assigned.
 
 
 ## Contact
