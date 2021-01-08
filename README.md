@@ -26,6 +26,10 @@ The following software is required for Concerti:
 - networkx (>2.4)
 - pyinterval (>1.2)
 
+### Download
+[Git Large File Storage (LFS)](https://git-lfs.github.com/) is required.
+
+`git lfs clone https://github.com/ComputationalGenomics/Concerti.git`
 
 ### Running
 The command to run Concerti is simply
