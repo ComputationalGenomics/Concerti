@@ -28,6 +28,7 @@ The following software is required for Concerti:
 
 ### Download
 [Git Large File Storage (LFS)](https://git-lfs.github.com/) is required.
+To download please run:
 
 `git lfs clone https://github.com/ComputationalGenomics/Concerti.git`
 
