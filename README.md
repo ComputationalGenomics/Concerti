@@ -11,21 +11,6 @@ Filippo Utro, Chaya Levovitz, Kahn Rhrissorrakrai and Laxmi Parida: A Common Met
 
 ## Usage
 
-### Requirements
-
-The following software is required for Concerti:
-
-- Python 3
-- Pandas (>1)
-- numpy (>1.18.2)
-- joblib (>0.14)
-- seaborn (>0.10)
-- matplotli (>3.2.1)
-- pyparsign (>2.4)
-- scipy (>1.4.1)
-- networkx (>2.4)
-- pyinterval (>1.2)
-
 ### Download
 [Git Large File Storage (LFS)](https://git-lfs.github.com/) is required.
 To download please run:
